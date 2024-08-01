@@ -219,7 +219,6 @@ class TicTacToeUI {
   }
 }
 
-// Initialization
 function initIndex() {
   let playerPick = localStorage.getItem("playerPick") || "X";
   const x = document.getElementById("x");
