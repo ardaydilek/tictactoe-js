@@ -51,7 +51,6 @@ class TicTacToe {
   }
 
   computerMove() {
-    // Simple AI: First try to win, then block player, then random move
     const move =
       this.findBestMove(this.computerSymbol) ||
       this.findBestMove(this.playerSymbol) ||
@@ -155,7 +154,7 @@ class TicTacToeUI {
           if (this.game.winner) {
             this.handleGameEnd();
           }
-        }, 500); // Delay for better UX
+        }, 500);
       }
     }
   }
